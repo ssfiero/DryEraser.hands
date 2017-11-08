@@ -4,14 +4,14 @@ Repo for our company DryEraser.hands
 
 ## User Story
 
-Our product is a To Do List that will allow users to create lists through texts and images.
+Our product is a To-Do List that will allow users to create lists through text and images.
 
 Our product supports emoji!
 :+1: :camel: :tada: :rocket: :metal: :octocat:
 
 
 
-## Product Specifications:
+## Product Specifications
 
 1. User should be able to add list items to the "white board", edit items already existing on the board, and remove items already existing on the board.
 
