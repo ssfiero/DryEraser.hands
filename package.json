@@ -1,0 +1,20 @@
+{
+  "name": "DryEraser.hands",
+  "version": "1.0.0",
+  "description": "Repo for our company DryEraser.hands",
+  "main": "test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GavinLoughridge/DryEraser.hands.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GavinLoughridge/DryEraser.hands/issues"
+  },
+  "homepage": "https://github.com/GavinLoughridge/DryEraser.hands#readme"
+}
