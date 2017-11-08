@@ -19,7 +19,7 @@ describe("edit item", function () {
   it("should be able to edit items already existing on the board", function () {
      let whiteBoard = [{text:'wash car', color: 'black', smudged: false}, {text: 'cook food', color: 'black', smudged: false}];
      //edit 'wash car' item to read 'have party' instead
-     myFunc.editItem('wash car', 'have party');
+     myFunc.editItem(whiteBoard, 'wash car', 'have party');
      expect(whiteBoard).to.deep.equal([{text:'have party', color: 'black', smudged: false}, {text: 'cook food', color: 'black', smudged: false}]);
   })
 })
@@ -28,7 +28,7 @@ describe("remove item", function () {
   it("should be able to remove items already existing on the board", function () {
      let whiteBoard = [{text:'wash car', color: 'black', smudged: false}, {text: 'cook food', color: 'black', smudged: false}];
      //remove 'cook food' item
-     myFunc.removeItem('cook food');
+     myFunc.removeItem(whiteBoard, 'cook food');
      expect(whiteBoard).to.deep.equal([{text:'wash car', color: 'black', smudged: false}]);
   })
 })
