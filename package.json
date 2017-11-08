@@ -2,9 +2,9 @@
   "name": "DryEraser.hands",
   "version": "1.0.0",
   "description": "Repo for our company DryEraser.hands",
-  "main": "test.js",
+  "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/GavinLoughridge/DryEraser.hands/issues"
   },
-  "homepage": "https://github.com/GavinLoughridge/DryEraser.hands#readme"
+  "homepage": "https://github.com/GavinLoughridge/DryEraser.hands#readme",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1"
+  }
 }

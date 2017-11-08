@@ -1,5 +1,5 @@
 const expect = require('chai').expect
-const myFunc = require('../src/main');
+const myFunc = require('./main');
 
 let whiteBoard = [{text:'wash car', color: 'black', smudged: false}, {text: 'cook food', color: 'black', smudged: false}];
 
@@ -17,7 +17,7 @@ describe("add item", function () {
 
 describe("edit item", function () {
   it("should be able to edit items already existing on the board", function () {
-     let whiteBoard = [[{text:'wash car', color: 'black', smudged: false}, {text: 'cook food', color: 'black', smudged: false}];
+     let whiteBoard = [{text:'wash car', color: 'black', smudged: false}, {text: 'cook food', color: 'black', smudged: false}];
      //edit 'wash car' item to read 'have party' instead
      myFunc.editItem('wash car', 'have party');
      expect(whiteBoard).to.deep.equal([{text:'have party', color: 'black', smudged: false}, {text: 'cook food', color: 'black', smudged: false}]);
@@ -35,9 +35,9 @@ describe("remove item", function () {
 
 //user should be able to dynamically move items within the list to reorder items.
 let whiteboard = [
- {text: "cool", color: "black", smudge: false;},
-{text: "This is fun!", color: "yellow", smudge: false;},
-{text: "Wow, neat!", color: "black", smudge: true;}
+ {text: "cool", color: "black", smudge: false},
+{text: "This is fun!", color: "yellow", smudge: false},
+{text: "Wow, neat!", color: "black", smudge: true}
 ];
 
 describe("move", function () {
@@ -50,7 +50,7 @@ describe("move", function () {
 });
 
 //For removing items, user has the option to permanently remove list items by choosing the eraser function. User can also choose the hand option in order to "smudge" the item but not full remove from the list, allowing them to retrieve smudged items.
-let whiteBoard = [{text: 'wash car', color: 'black', smudged: false}, {text: 'cook food', color: 'black', sumdged: false}];
+whiteBoard = [{text: 'wash car', color: 'black', smudged: false}, {text: 'cook food', color: 'black', sumdged: false}];
 
 describe('remove', function(array){
   it("removes the item permanently", function(){
@@ -60,6 +60,6 @@ describe('remove', function(array){
 })
 describe('smudge', function(array){
   it('smudges or not smudges'), function(){
-    expect(myFunc.smudge().to.equal('smudge: true');
+    expect(myFunc.smudge().to.equal('smudge: true'));
   }
 })
