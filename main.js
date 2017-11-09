@@ -1,5 +1,5 @@
 function addItem(whiteboard, item) {
-  whiteboard.push({text: 'find lost dog', color: 'black', smudged: false});
+  whiteboard.push({text: item, color: 'black', smudged: false});
 }
 
 function editItem(whiteboard, oldItem, newItem) {
@@ -17,8 +17,13 @@ function removeItem(whiteboard, item) {
   });
 };
 
+function newWhiteBoard() {
+  return [];
+};
+
 module.exports = {
-  addItem: addItem,
-  editItem: editItem,
-  removeItem: removeItem
+  addItem,
+  editItem,
+  removeItem,
+  newWhiteBoard
 }
